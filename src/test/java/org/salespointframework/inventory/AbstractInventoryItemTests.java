@@ -30,13 +30,13 @@ import org.salespointframework.quantity.Quantity;
  *
  * @author Oliver Gierke
  */
-class InventoryItemTests {
+class AbstractInventoryItemTests {
 
 	private static final Quantity TEN = Quantity.of(10);
 	private static final Quantity TWENTY = TEN.add(TEN);
 
 	private Cookie cookie;
-	private InventoryItem item;
+	private AbstractInventoryItem<?> item;
 
 	@BeforeEach
 	void before() {
